@@ -1,6 +1,5 @@
 //npm i @mailchimp/mailchimp_marketing
 const mailchimp = require("@mailchimp/mailchimp_marketing");
-const request = require("request");
 const express = require("express");
 const app = express();
 
@@ -19,12 +18,17 @@ app.get("/", function(req, res) {
 });
 
 mailchimp.setConfig({
-  apiKey: "cc84ce59ea0e03089003d92f8cfdff7a-us1",
-  server: "us1"
+  apiKey: "2d84e7565991cc8aee5565dc1704e69e-us1",
+  /* Change this API key with
+   your OWN API key in MailChimp -> Admin site -> Account */
+  server: "us1" // Change this server number with your API server number
 });
 
 app.post("/", function(req, res) {
   const listId = "5bb40b69e8";
+  /* Change this Audience ID with your OWN Audience
+   ID through MailChimp -> Admin Site -> Audience -> Settings -> Audience name
+   and defaults */
 
   async function run() {
     const response = await mailchimp.lists.addListMember(listId, {
@@ -48,7 +52,3 @@ app.post("/", function(req, res) {
 app.post("/failure", function(req, res) {
   res.redirect("/");
 });
-
-// cc84ce59ea0e03089003d92f8cfdff7a-us1
-
-// 5bb40b69e8
