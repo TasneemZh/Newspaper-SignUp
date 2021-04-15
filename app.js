@@ -18,17 +18,17 @@ app.get("/", function(req, res) {
 });
 
 mailchimp.setConfig({
-  apiKey: "2d84e7565991cc8aee5565dc1704e69e-us1",
-  /* Change this API key with
-   your OWN API key in MailChimp -> Admin site -> Account -> Extras -> API keys*/
+  /* This API key is a random one and not used in the deployed site. Change it
+  with your OWN API key in: MailChimp -> Admin site -> Account -> Extras -> API
+  keys */
+  apiKey: "cc84ce59ea0e03089003d92f8cfdff7a-us1",
   server: "us1" // Change this server number with your API server number
 });
 
 app.post("/", function(req, res) {
+  /* Change this Audience key with your OWN Audience ID through MailChimp ->
+  Admin Site -> Audience -> Settings -> Audience name and defaults */
   const listId = "5bb40b69e8";
-  /* Change this Audience ID with your OWN Audience
-   ID through MailChimp -> Admin Site -> Audience -> Settings -> Audience name
-   and defaults */
 
   async function run() {
     const response = await mailchimp.lists.addListMember(listId, {
