@@ -20,7 +20,7 @@ app.get("/", function(req, res) {
 mailchimp.setConfig({
   apiKey: "2d84e7565991cc8aee5565dc1704e69e-us1",
   /* Change this API key with
-   your OWN API key in MailChimp -> Admin site -> Account */
+   your OWN API key in MailChimp -> Admin site -> Account -> Extras -> API keys*/
   server: "us1" // Change this server number with your API server number
 });
 
