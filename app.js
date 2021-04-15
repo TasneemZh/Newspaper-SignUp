@@ -1,6 +1,6 @@
 //npm i @mailchimp/mailchimp_marketing
 const mailchimp = require("@mailchimp/mailchimp_marketing");
-
+const request = require("request");
 const express = require("express");
 const app = express();
 
