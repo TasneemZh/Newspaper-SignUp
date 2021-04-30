@@ -6,7 +6,7 @@ HTML + CSS + Bootstrap + JavaScript + Node.js + API
 
 You can open the site through your local server on 3000 port by typing:
 
-- the URL: "http://localhost:3000/"
+- the URL: http://localhost:3000/
 
 **and** 
 
