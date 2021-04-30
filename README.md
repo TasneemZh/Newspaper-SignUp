@@ -10,7 +10,7 @@ You can open the site through your local server on 3000 port by typing:
 
 **and** 
 
-- "`nodemon (app.js)`" on your HyperTerminal
+- `nodemon (app.js)` on your HyperTerminal
 
 NOTE: Specifying *app.js* after *nodemon* is optional since it is determined to be the *main file* in *package.JSON*
 
