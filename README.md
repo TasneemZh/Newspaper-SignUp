@@ -16,7 +16,7 @@ You can open the site through your local server on 3000 port by typing:
 
 You have to replace the *API key* and *Audience key* by making an account on MailChimp (For more details, see app.js comments)
 
-Your changes take effect on your local server but not the site unless you deploy your git on Heroku after making your own account on Heroku
+Your changes take effect on your local server but not the site unless you deploy your git on Heroku after making an account on Heroku
 
 -----------------
 
