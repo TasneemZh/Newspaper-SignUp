@@ -1,6 +1,6 @@
 The site is published at https://tasneemzh-newspaper.herokuapp.com/
 
-HTML + CSS + Bootstrap + JavaScript + Node.js + API
+HTML + CSS + Bootstrap + JavaScript + Node.js + Express + API
 
 -----------------
 
