@@ -1,3 +1,4 @@
+require("dotenv").config();
 //npm i @mailchimp/mailchimp_marketing
 const mailchimp = require("@mailchimp/mailchimp_marketing");
 const express = require("express");
@@ -9,24 +10,17 @@ app.use(express.urlencoded({
 
 app.use(express.static("link"));
 
-app.listen(process.env.PORT || 3000, function() {
-  console.log("Server is running at port 3000");
-});
-
 app.get("/", function(req, res) {
   res.sendFile(__dirname + "/signup.html");
 });
 
 mailchimp.setConfig({
-  /* This API key is a random one and not used in the deployed site. Change it
-  with your OWN API key in: MailChimp -> Admin site -> Account -> Extras -> API
-  keys */
-  apiKey: "cc84ce59ea0e03089003d92f8cfdff7a-us1",
-  server: "us1" // Change this server number with your API server number
+  apiKey: process.env.API_KEY, // Change this API key with your API key
+  server: process.env.SERVER_NUM // Change this server number with your API server number
 });
 
 app.post("/", function(req, res) {
-  /* Change this Audience key with your OWN Audience ID through MailChimp ->
+  /* Change this Audience key with your Audience ID through MailChimp ->
   Admin Site -> Audience -> Settings -> Audience name and defaults */
   const listId = "5bb40b69e8";
 
@@ -51,4 +45,24 @@ app.post("/", function(req, res) {
 
 app.post("/failure", function(req, res) {
   res.redirect("/");
+});
+
+// Old server configuration
+// app.listen(process.env.PORT || 3000, function() {
+//   console.log("Server is running at port 3000");
+// });
+
+// Server configuration
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
+}
+
+let server = app.listen(port, function() {
+  console.log("The server is running successfully!")
+});
+
+server.on("clientError", (err, socket) => {
+  console.error(err);
+  socket.end("HTTP/1.1 400 Bad Request\r\n\r\n");
 });
