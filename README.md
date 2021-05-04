@@ -8,7 +8,7 @@ You can open the site through your local server on 3000 port by typing:
 
 - the URL: http://localhost:3000/
 
-**and** 
+**and**
 
 - `nodemon (app.js)` on your HyperTerminal
 
@@ -47,3 +47,7 @@ For more details, see:
 **and**
 
 [Mailchimp: Quick start](https://mailchimp.com/developer/marketing/guides/quick-start/)
+
+-----------------
+
+I also heard there are awesome and useful notes at [.gitignore](https://github.com/TasneemZh/Newspaper-SignUp/blob/main/.gitignore), so what are you waiting for? Go and take a quick look
