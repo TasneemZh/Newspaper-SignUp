@@ -16,9 +16,15 @@ NOTE: Specifying *app.js* after *nodemon* is optional since it is determined to 
 
 -----------------
 
-You have to replace the *API key* and *Audience key* by making an account on Mailchimp (For more details, see app.js comments)
+You have to replace the *API key* and *Audience key* if you want to get into the database details, but first, you should have an account on Mailchimp (For more details, see app.js comments)
 
-Your changes take effect on your local server but not the site unless you deploy your git on Heroku after making an account on Heroku
+Your changes take effect on your local server but not the site unless you:
+
+1) deploy your project on Heroku after making an account on it
+
+2) push your project to Heroku each time you make changes on it
+
+NOTE: It takes some time for heroku to take effect after deploying and git-pushing
 
 -----------------
 
