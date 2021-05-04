@@ -1,3 +1,7 @@
-# This is the file deployed in the site:
-# https://tasneemzh-newspaper.herokuapp.com/
+# A confidential file that have the API key and server number
 .env
+
+# A folder where Node packages reside - No need to use `npm i` to install what
+# ...is required since heroku can process them by itself unless you want to use
+# ...the project locally
+/node_modules
