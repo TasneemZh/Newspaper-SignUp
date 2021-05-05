@@ -2,6 +2,3 @@
 # ...is required since heroku will take care of it. However, if you want to use
 # ...the project locally since the command becomes a MUST
 node_modules/
-
-# A confidential file that have the API key and server number
-.env
