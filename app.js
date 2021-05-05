@@ -15,8 +15,10 @@ app.get("/", function(req, res) {
 });
 
 mailchimp.setConfig({
-  apiKey: process.env.API_KEY, // Change this API key with your API key
-  server: process.env.SERVER_NUM // Change this server number with your API server number
+  apiKey: "4ab2841f32bd03f403820927c07a5fdd-us1",
+  // process.env.API_KEY, // Change this API key with your API key
+  server: "us1"
+  // process.env.SERVER_NUM // Change this server number with your API server number
 });
 
 app.post("/", function(req, res) {
