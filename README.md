@@ -60,7 +60,7 @@ Welcome to the Pokédex app!
 
 -----------------
 
-##About the app
+## About the app
 
 The app contains all the Pokemon out there with their details and images. The Pokemon current count when this app has been developed is 809. It also has many features, such as:
 
@@ -74,15 +74,15 @@ Any Pokemon that was found by the user can be checked in order to distinguish th
 
 -----------------
 
-##How to run the app
+## How to run the app
 
 The app can be opened in two ways, either locally or hosted on the Internet by Heroku.
 
-####Locally on your computer
+#### Locally on your computer
 
 To run it locally, do the following steps:
 
-1- Clone the project and use the ‘cd’ command to reside on the ‘app’ folder.
+1- Clone the project and use the `cd` command to reside on the ‘app’ folder.
 
 2- Run on your command line `npm i` to download all the packages needed by the app. Make sure you have `node js` first installed on you computer.
 
@@ -90,7 +90,7 @@ To run it locally, do the following steps:
 
 4- Write the url: **localhost:3000** to see and interact with the app.
 
-####Hosted on the Internet
+#### Hosted on the Internet
 
 To run the app on the Internet, click on the following link:
 
@@ -98,7 +98,7 @@ To run the app on the Internet, click on the following link:
 
 -----------------
 
-####Notes
+#### Notes
 
 Some notes to take into consideration when using the app:
 
