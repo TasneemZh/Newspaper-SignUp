@@ -56,7 +56,7 @@ I also heard there are awesome and useful notes at [.gitignore](https://github.c
 
 
 
-~~~Welcome to the Pokédex app!~~~
+Welcome to the Pokédex app!
 
 -----------------
 
@@ -106,4 +106,4 @@ The loading page take 3 seconds, and the searching process takes five. Hopefully
 
 -----------------
 
-Developed by: Tasneem Zahdeh
+_Developed by:_ Tasneem Zahdeh
