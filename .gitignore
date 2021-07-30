@@ -2,3 +2,9 @@
 # ...is required since heroku will take care of it. However, if you want to use
 # ...the project locally since the command becomes a MUST
 node_modules/
+
+# Confidential information regarding configuration
+.env
+
+# NPM packages history
+package-lock.json
