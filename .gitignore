@@ -4,7 +4,7 @@
 node_modules/
 
 # Confidential information regarding configuration
-.env
+# .env
 
 # NPM packages history
 package-lock.json
