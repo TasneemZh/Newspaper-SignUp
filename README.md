@@ -32,6 +32,8 @@ Make sure to:
 
 1- create a site on Heroku to deploy your project on it by typing: `heroku create [your-site-name]`
 
+2- leave your .env file visible since adding it to .gitignore will prohibit Heroku from reaching it out.
+
 2- update your local repository on Git (type on HyperTerminal: `git add .` THEN `git commit -m "[your message]"`)
 
 3- push your local repository to the remote repository of your Heroku (type on HyperTerminal: `git push heroku [master]`)

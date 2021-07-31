@@ -4,7 +4,8 @@
 node_modules/
 
 # Confidential information regarding configuration
-# .env
+# DON'T COMMENT OUT THE ENVIROMENT VARIABLES SINCE HEROKU WON'T FIND THEM THAT WAY
+.env
 
 # NPM packages history
 package-lock.json
